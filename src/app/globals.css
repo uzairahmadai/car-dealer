@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --primary: 12 100% 50%;
+    --primary-foreground: 210 40% 98%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1400px] mx-auto px-4;
+  }
+
+  .btn-primary {
+    @apply bg-[#FF3600] text-white px-6 py-3 rounded-lg hover:bg-[#cc2b00] transition-colors;
+  }
+
+  .section-title {
+    @apply text-4xl font-bold mb-8;
+  }
+
+  .section-subtitle {
+    @apply text-[#FF3600] text-lg mb-2;
+  }
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Hover Effects */
+.hover-scale {
+  @apply transition-transform duration-300;
+}
+
+.hover-scale:hover {
+  @apply transform scale-105;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Form Elements */
+input, select, textarea {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF3600] focus:border-transparent;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow;
+}
+
+.card-body {
+  @apply p-6;
+}
+
+/* Navigation Styles */
+.nav-link {
+  @apply text-gray-700 hover:text-[#FF3600] transition-colors;
+}
+
+.nav-link.active {
+  @apply text-[#FF3600];
+}
+
+/* Button Styles */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-colors;
+}
+
+.btn-outline {
+  @apply border border-current hover:bg-current hover:text-white;
+}
+
+/* Section Spacing */
+.section {
+  @apply py-20;
+}
+
+/* Responsive Images */
+.img-fluid {
+  @apply w-full h-auto;
+}
+
+.img-cover {
+  @apply w-full h-full object-cover;
+}

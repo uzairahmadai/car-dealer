@@ -1,0 +1,11 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#f5f5f5"/>
+  <path d="M200 400L280 250H520L600 400" stroke="#FF3600" stroke-width="8"/>
+  <path d="M250 400C250 400 320 220 400 220C480 220 550 400 550 400" stroke="#FF3600" stroke-width="8"/>
+  <circle cx="300" cy="400" r="60" stroke="#FF3600" stroke-width="8"/>
+  <circle cx="500" cy="400" r="60" stroke="#FF3600" stroke-width="8"/>
+  <path d="M370 180H430" stroke="#FF3600" stroke-width="8"/>
+  <path d="M380 180L400 150L420 180" stroke="#FF3600" stroke-width="8"/>
+  <text x="400" y="150" text-anchor="middle" font-family="Arial" font-size="40" fill="#333333">Audi A4</text>
+  <text x="400" y="500" text-anchor="middle" font-family="Arial" font-size="30" fill="#666666">Executive Sedan</text>
+</svg>
